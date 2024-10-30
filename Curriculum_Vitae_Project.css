@@ -1,0 +1,264 @@
+        /* **************************** */
+        /* ***** GENERAL SETTINGS  **** */
+        /* **************************** */
+        :root {
+            /* Color of the file*/
+            --text-color: #2F5496;
+            /* Fontt size*/
+            --text-normal: 14px;
+            --text-title: 22px;
+            --text-subtitle: 18px;
+            --text-location: 15px;
+            --text-date: 13px;
+            --text-name: 28px;
+            --text-job1: 32px;
+            --text-job2: 20px;
+            --text-footer: 12px;
+            /* Image and box*/
+            --box-width: 40%;
+            --image-width: 15%;
+            --skills-width: 15%;
+            --image-top: 5%;
+            }
+            .font {
+                font-family: 'Calibri', sans-serif;
+                font-size: 16px;
+            }
+            .title1 {
+                text-align: center;
+                color: var(--text-color);
+                font-size: var(--text-job1);
+                margin-left: 10%;
+                margin-bottom: 2.5%;
+                font-weight: bolder;
+                padding-top: 2%;
+    
+            }
+            .title2 {
+                text-align: center;
+                color: var(--text-color);
+                font-size: var(--text-job2);
+                margin-left: 10%;
+                margin-bottom: 4.5%;
+                font-weight: bolder;
+            }
+            .border {
+                border-block: 3px solid var(--text-color);
+                border-right: 3px solid var(--text-color);
+            }
+            .floating-image {
+                position: absolute;
+                left: calc((var(--box-width) - var(--image-width)) / 2); /* left = (column-left.width - .floating-image.width)/2 */
+                top: var(--image-top);
+                border: 5px solid var(--text-color);
+                width: var(--image-width); /* Impact on .floating-image.left */
+                height: 11%;
+                border-radius: 50% 50% / 60% 60%;
+            }       
+            /* ********************************** */
+            /* ***** GENERAL LEFT SETTINGS  **** */
+            /* ********************************** */
+            .left-title {
+                color: var(--text-color);
+                padding-top: 20%;
+                font-size: var(--text-name);
+                font-weight: bold;
+                text-align: center;
+    
+            }
+            .left-Personalinfos {
+                font-size: var(--text-subtitle);
+                padding-top: 5%;
+                font-weight: bold;
+                text-align: center;
+            }
+            .left-title-1 {
+                color: var(--text-color);
+                padding-top: 5%;
+                font-size: var(--text-title);
+                font-weight: bold;
+                text-decoration: underline;
+                text-align: center;
+            }
+    
+            .left-text {
+                color: black;
+                padding-bottom: 2.5%;
+                font-size: var(--text-date);
+            }
+            .left-underligne {
+                text-decoration: underline;
+            }
+                /* ************************* */
+            /* **** SKILLS SETTINGS **** */
+            /* ************************* */
+            .logo {
+                width: auto;
+                height: 35px;
+                margin: 0px;
+            }
+            .logo-lang {
+                width: auto;
+                height: 25px;
+                margin: 0px;
+            }
+         
+    
+            .grid-skills {
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 3%;
+                gap: 2%;
+                text-align: center;
+    
+            }
+            .item-skills {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 2px solid var(--text-color);
+                font-size: var(--text-footer);
+            }
+            .title-skills {
+                font-size: var(--text-subtitle);
+                color: var(--text-color);
+                font-style: italic;
+            }
+            .skills-row {
+                display: flex;
+                align-items: center;
+                
+            }
+            .flex-skills {
+                flex-grow: 3;
+            }
+            .space-skills1 {
+                padding-top: 12%;
+            }
+            .space-skills2 {
+                padding-top: 4%;
+                font-size: var(--text-normal);
+            }
+            /* ********************************** */
+            /* ***** GENERAL RIGHT SETTINGS  **** */
+            /* ********************************** */
+    
+            .right-title {
+                color: var(--text-color);
+                padding-left: 1%;
+                font-size: var(--text-title);
+                font-weight: bold;
+                text-decoration: underline;
+                margin-bottom: 2%;
+                text-align: center;
+            }
+            .right-subtitle {
+                /*color: blue;*/
+                padding-left: 3%;
+                font-size: var(--text-subtitle);
+                font-weight: bold;
+            }
+            .right-location {
+                /*color: blue;*/
+                padding-left: 3%;
+                font-size: var(--text-location);
+                font-weight: bold;
+            }
+            .right-text {
+                /*color: green;*/
+                padding-left: 4%;
+                padding-right: 2%;
+                font-size: var(--text-normal);
+                text-align: justify;
+            }
+            .right-date {
+                /*color: yellow;*/
+                text-align: center;
+                font-size: var(--text-date);
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+    
+                margin-left: 5%;
+                list-style: none;
+    
+            }
+            
+            li {
+                position: relative;
+            }
+            li::before {
+                content: '❆'; /* https://www.caracterespeciaux.com/p/random.html?m=1 */
+                font-family: 'Wingdings';
+                position: absolute;
+                left: -15px;
+                color: black;
+            }
+            /* ********************************** */
+            /* ***** GENERAL TABLE SETTINGS  **** */
+            /* ********************************** */
+            .flex-container {
+                display: flex;
+            }
+            .flex-left {
+                flex: 0 0 var(--box-width); /* Impact on .floating-image.left */
+                /*background-color: lightgrey;*/
+                color: black;
+    
+            }
+            .flex-right {
+                flex: 1;
+                /*background-color: rgb(200, 108, 108);*/
+                color: black;
+    
+            }
+            .flex-right-left {
+                width: 85%;
+                /*background-color: blanchedalmond;*/
+                color: black;
+                padding-bottom: 2.5%;
+            }
+            .flex-right-right {
+                width: 15%;
+                /*background-color: royalblue;*/
+                color: black;
+                padding-top: 0.5%;
+            }
+            /* ************************* */
+            /* ***** PAGE SETTINGS ***** */
+            /* ************************* */
+            body {margin: 0;}
+            .sheet-outer {margin: 0;}
+            .sheet {
+                margin: 0;
+                overflow: hidden;
+                position: relative;
+                box-sizing: border-box;
+                page-break-after: always;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+            .sheet-outer.A4 .sheet { 
+                width: 210mm; 
+                height: 296mm; 
+            }
+            .sheet.padding { padding: 0mm } /*default page: 5mm*/
+            @media screen {
+                body { 
+                    background: #808080;
+                }
+                .sheet {
+                    background: white;
+                    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3); 
+                    margin: 5mm auto;
+                }
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            @media print {
+                .sheet-outer.A4, .sheet-outer.A5.landscape { 
+                    width: 210mm;
+                }
+            }
+    
