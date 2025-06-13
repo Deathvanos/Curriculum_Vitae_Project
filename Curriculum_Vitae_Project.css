@@ -1,174 +1,207 @@
-    :root {
-      --text-color: #2F5496;
-      --font-size: 16px;
-      --title-size: 22px;
-      --subtitle-size: 22px;
-    }
+:root {
+    --text-color: #2e3b7d;
+    --font-size: 16px;
+    --title-size: 22px;
+    --subtitle-size: 22px;
+}
 
-    body {
-      margin: 0;
-      font-family: Calibri, sans-serif;
-      background: #808080;
-    }
+body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    background: #808080;
+}
 
-    .sheet-outer.A4 .sheet {
-      width: 210mm;
-      height: 296mm;
-      background: white;
-      box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
-      margin: 5mm auto;
-      box-sizing: border-box;
-      padding: 5mm;
-    }
+a {
+    color: var(--text-color);
+}
 
-    .cv-grid {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 20px;
-      padding-bottom: 2mm;
-    }
+.sheet-outer.A4 .sheet {
+    width: 210mm;
+    height: 296mm;
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+    margin: 5mm auto;
+    box-sizing: border-box;
+    padding: 5mm;
+}
 
-    .cv-grid-row2 {
-      display: grid;
-      grid-template-columns: 5fr 8fr;
-      border-top: 2px solid var(--text-color);
-    }
+.cv-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding-bottom: 2mm;
+}
 
-    .cell {
-      box-sizing: border-box;
-    }
+.cv-grid-row2 {
+    display: grid;
+    grid-template-columns: 5fr 8fr;
+    border-top: 2px solid var(--text-color);
+}
 
-    .cell-left {
-      border-right: 2px solid var(--text-color);
-      padding: 10px;
-    }
+.cell {
+    box-sizing: border-box;
+}
 
-    .cell-right {
-      padding-inline: 10px;
-      padding-bottom: 10px;
-    }
+.cell-left {
+    border-right: 2px solid var(--text-color);
+    padding: 10px;
+}
 
-    .left-title {
-      font-size: var(--title-size);
-      font-weight: bold;
-      color: var(--text-color);
-      text-align: center;
-    }
+.cell-right {
+    padding-inline: 10px;
+    padding-bottom: 10px;
+}
 
-    .section-text {
-      font-size: var(--font-size);
-      text-align: justify;
-    }
+.left-title {
+    font-size: var(--title-size);
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+}
 
-    .section-subtitle {
-      font-size: var(--subtitle-size);
-      font-weight: bold;
-      color: var(--text-color);
-      margin-top: 10px;
-      text-decoration: underline;
-      text-align: center;
-    }
+.section-text {
+    font-size: var(--font-size);
+    text-align: justify;
+}
 
-    .bottom-note {
-      text-align: center;
-      font-size: var(--font-size);
-      margin-top: 20px;
-      color: var(--text-color);
-    }
+.section-subtitle {
+    font-size: var(--subtitle-size);
+    font-weight: bold;
+    color: var(--text-color);
+    margin-top: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
 
-    .photo {
-      display: block;
-      margin: 0 auto 0px auto;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid var(--text-color);
-    }
+.bottom-note {
+    text-align: center;
+    font-size: var(--font-size);
+    margin-top: 20px;
+    color: var(--text-color);
+}
 
-
-    
-    ul {
-        margin: 0;
-        padding: 0;
-        margin-left: 5%;
-        list-style: none;
-    }
-
-    li {
-        position: relative;
-    }
-    li::before {
-        content: '❆'; /* https://www.caracterespeciaux.com/p/random.html?m=1 */
-        font-family: 'Wingdings';
-        position: absolute;
-        left: -15px;
-        color: black;
-    }
+.photo {
+    display: block;
+    margin: 0 auto 0px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--text-color);
+}
 
 
-    .job-title {
-        margin-top: 1mm;
-        font-size: 19px;
-        font-weight: bold;
-    }
 
-    .job-location {
-        font-size: 15px;
-        font-weight: bold;
-    }
+ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 5%;
+    list-style: none;
+}
 
-    .job-date {
-        font-style: italic;
-        font-size: 14px;
-    }
+li {
+    position: relative;
+}
+li::before {
+    content: '❆'; /* https://www.caracterespeciaux.com/p/random.html?m=1 */
+    font-family: 'Wingdings';
+    position: absolute;
+    left: -15px;
+    color: black;
+}
 
-    .post-description {
-        color: var(--text-color);
-        text-align: justify;
-        text-align-last: center;
-        font-weight: bolder;
-        margin-top: 2mm;
-    }
 
-    .name {
-        font-size: 28px;
-        font-weight: bold;
-        color: var(--text-color);
-        text-align: center;
-        margin-bottom: 10px;
-        margin-top: 25px;
+.job-title {
+    margin-top: 1mm;
+    font-size: 19px;
+    font-weight: bold;
+}
 
-    }
+.job-location {
+    font-size: 15px;
+    font-weight: bold;
+}
 
-    .name-info {
-        font-size: 18px;
-        text-align: center;
-        margin-bottom: 50px;
-    }
+.job-date {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.post-description {
+    color: var(--text-color);
+    text-align: justify;
+    text-align-last: center;
+    font-weight: bolder;
+    margin-top: 2mm;
+    margin-right: 5mm;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 25px;
+
+}
+
+.name-info {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 .entry-title {
-      font-weight: bold;
-      margin-top: 10px;
-    }
+    font-weight: bold;
+    margin-top: 10px;
+}
 
-    .entry-list {
-      margin-bottom: 10px;
-    }
+.entry-list {
+    margin-bottom: 10px;
+}
 
-    .grid-two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px 20px;
-    }
+.grid-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
 
-    .section-text2 {
-      font-size: var(--font-size);
-      text-align: left;
-    }
+.section-text2 {
+    font-size: var(--font-size);
+    text-align: left;
+}
 
 
-    .hobbies-title {
-        margin-top: 2mm;
-        font-weight: bold;
-    }
+.hobbies-title {
+    margin-top: 2mm;
+    font-weight: bold;
+}
+
+
+/* ************************* */
+/* ***** PAGE SETTINGS ***** */
+/* ************************* */
+@media print {
+  body {
+    background: white !important;
+    margin: 0 !important;
+  }
+
+.sheet-outer.A4 .sheet {
+    width: 210mm;
+    height: 296mm;
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+    box-sizing: border-box;
+    padding: 8mm;
+    margin: 0 !important;
+  }
+
+
+  @page {
+    margin: 0;
+    size: A4;
+  }
+
+}
