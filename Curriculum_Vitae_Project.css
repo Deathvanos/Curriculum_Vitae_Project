@@ -22,7 +22,10 @@ a {
     box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
     margin: 5mm auto;
     box-sizing: border-box;
-    padding: 5mm;
+    padding-left: 2mm;
+    padding-right: 2mm;
+    padding-top: 8mm;
+    padding-bottom: 8mm;
 }
 
 .cv-grid {
@@ -194,7 +197,10 @@ li::before {
     background: white;
     box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
     box-sizing: border-box;
-    padding: 8mm;
+    padding-left: 2mm;
+    padding-right: 2mm;
+    padding-top: 8mm;
+    padding-bottom: 8mm;
     margin: 0 !important;
   }
 
