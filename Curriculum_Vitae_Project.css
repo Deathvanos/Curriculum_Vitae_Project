@@ -24,7 +24,7 @@ a {
     box-sizing: border-box;
     padding-left: 2mm;
     padding-right: 2mm;
-    padding-top: 8mm;
+    padding-top: 5mm;
     padding-bottom: 8mm;
 }
 
@@ -62,12 +62,12 @@ a {
     text-align: center;
 }
 
-.section-text {
+.section-block {
     font-size: var(--font-size);
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
-.section-subtitle {
+.section-title {
     font-size: var(--subtitle-size);
     font-weight: bold;
     color: var(--text-color);
@@ -114,18 +114,18 @@ li::before {
 }
 
 
-.job-title {
+.block-title {
     margin-top: 1mm;
     font-size: 19px;
     font-weight: bold;
 }
 
-.job-location {
+.block-location {
     font-size: 15px;
     font-weight: bold;
 }
 
-.job-date {
+.block-date {
     font-style: italic;
     font-size: 14px;
 }
@@ -199,7 +199,7 @@ li::before {
     box-sizing: border-box;
     padding-left: 2mm;
     padding-right: 2mm;
-    padding-top: 8mm;
+    padding-top: 5mm;
     padding-bottom: 8mm;
     margin: 0 !important;
   }
